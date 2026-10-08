@@ -1,0 +1,797 @@
+/* ==============================
+   CONFIGURACIÓN GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff7f5,
+            #fdf0f5,
+            #f4eefb
+        );
+
+    color: #5d5265;
+
+    min-height: 100vh;
+}
+
+
+/* ==============================
+   ENCABEZADO
+================================ */
+
+header {
+
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.90);
+
+    backdrop-filter: blur(10px);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 8%;
+
+    box-shadow: 0 4px 15px rgba(130, 100, 120, 0.10);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.logo {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #c47fa3;
+
+}
+
+
+nav {
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+nav a {
+
+    text-decoration: none;
+
+    color: #66586b;
+
+    padding: 10px 17px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+
+}
+
+
+nav a:hover {
+
+    background: #f6dce9;
+
+    color: #a95882;
+
+}
+
+
+/* ==============================
+   INICIO
+================================ */
+
+.hero {
+
+    min-height: 600px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    padding: 80px 10%;
+
+}
+
+
+.hero-text {
+
+    max-width: 600px;
+}
+
+
+.subtitulo {
+
+    color: #c47fa3;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.hero h1 {
+
+    font-size: 60px;
+
+    line-height: 1.1;
+
+    color: #66506b;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-text > p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+.boton {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #d99ab9;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    box-shadow: 0 6px 15px rgba(200, 130, 165, 0.25);
+}
+
+
+.boton:hover {
+
+    background: #bd769d;
+
+    transform: translateY(-3px);
+}
+
+
+/* TARJETA DEL INICIO */
+
+.hero-card {
+
+    width: 350px;
+
+    height: 350px;
+
+    background: linear-gradient(
+        145deg,
+        #f7dce8,
+        #e9ddf5
+    );
+
+    border-radius: 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 40px rgba(150, 120, 150, 0.15);
+
+    transform: rotate(3deg);
+}
+
+
+.hero-card .flor {
+
+    font-size: 80px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero-card h2 {
+
+    color: #6d5772;
+
+    margin-bottom: 10px;
+}
+
+
+.hero-card p {
+
+    width: 70%;
+
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   BIENVENIDA
+================================ */
+
+.bienvenida {
+
+    text-align: center;
+
+    padding: 80px 10%;
+
+    background: rgba(255,255,255,0.5);
+}
+
+
+.bienvenida h2 {
+
+    font-size: 35px;
+
+    color: #725c76;
+
+    margin-bottom: 20px;
+}
+
+
+.bienvenida > p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    line-height: 1.7;
+}
+
+
+.categorias {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 40px;
+
+    flex-wrap: wrap;
+}
+
+
+.categoria {
+
+    background: white;
+
+    padding: 30px;
+
+    width: 250px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(140,110,140,0.10);
+
+    transition: 0.3s;
+}
+
+
+.categoria:hover {
+
+    transform: translateY(-8px);
+}
+
+
+.categoria span {
+
+    font-size: 45px;
+}
+
+
+.categoria h3 {
+
+    margin: 15px 0 10px;
+
+    color: #705b76;
+}
+
+
+/* ==============================
+   PÁGINAS INTERNAS
+================================ */
+
+.pagina {
+
+    padding: 70px 10%;
+
+    min-height: 750px;
+}
+
+
+.titulo-pagina {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+
+.titulo-pagina p:first-child {
+
+    color: #c47fa3;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.titulo-pagina h1 {
+
+    font-size: 50px;
+
+    color: #67516c;
+
+    margin: 15px 0;
+}
+
+
+.titulo-pagina p:last-child {
+
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   NOSOTROS
+================================ */
+
+.nosotros-contenido {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    margin-bottom: 50px;
+}
+
+
+.nosotros-texto,
+.mision {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 10px 30px rgba(140,110,140,0.10);
+}
+
+
+.nosotros-texto h2,
+.mision h2 {
+
+    color: #b56f95;
+
+    margin-bottom: 20px;
+}
+
+
+.nosotros-texto p,
+.mision p {
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+.mision {
+
+    background: linear-gradient(
+        135deg,
+        #f9e3ed,
+        #eee4f8
+    );
+}
+
+
+.valores {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-bottom: 50px;
+
+    flex-wrap: wrap;
+}
+
+
+.valores div {
+
+    background: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+    width: 230px;
+
+    border-radius: 25px;
+}
+
+
+.valores span {
+
+    font-size: 40px;
+}
+
+
+.valores h3 {
+
+    margin: 10px 0;
+
+    color: #6d5772;
+}
+
+
+.regresar {
+
+    display: block;
+
+    width: max-content;
+
+    margin: 30px auto 0;
+}
+
+
+/* ==============================
+   PRODUCTOS
+================================ */
+
+.productos {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 35px;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+.producto {
+
+    background: white;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px rgba(140,110,140,0.12);
+
+    transition: 0.3s;
+}
+
+
+.producto:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(140,110,140,0.18);
+}
+
+
+.producto img {
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.producto-info {
+
+    padding: 25px;
+}
+
+
+.producto-info h2 {
+
+    color: #705b76;
+
+    margin-bottom: 10px;
+}
+
+
+.producto-info p {
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+
+.precio {
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #c06f99;
+}
+
+
+/* ==============================
+   CONTACTOS
+================================ */
+
+.contacto-container {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 30px;
+}
+
+
+.contacto-info,
+.formulario {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 10px 30px rgba(140,110,140,0.10);
+}
+
+
+.contacto-info h2,
+.formulario h2 {
+
+    color: #b56f95;
+
+    margin-bottom: 30px;
+}
+
+
+.dato {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.dato span {
+
+    font-size: 30px;
+}
+
+
+.dato h3 {
+
+    color: #6d5772;
+
+    margin-bottom: 5px;
+}
+
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+form label {
+
+    font-weight: bold;
+
+    color: #6d5772;
+
+    margin-top: 5px;
+}
+
+
+input,
+textarea {
+
+    border: 2px solid #f0dce7;
+
+    border-radius: 15px;
+
+    padding: 14px;
+
+    font-family: inherit;
+
+    outline: none;
+
+    background: #fffafd;
+
+    font-size: 15px;
+}
+
+
+input:focus,
+textarea:focus {
+
+    border-color: #d99ab9;
+}
+
+
+button {
+
+    border: none;
+
+    padding: 15px;
+
+    border-radius: 25px;
+
+    background: #d99ab9;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+
+    background: #bd769d;
+}
+
+
+/* ==============================
+   FOOTER
+================================ */
+
+footer {
+
+    background: #ead9e5;
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: #705b76;
+
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 800px) {
+
+    header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+    nav {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .hero h1 {
+
+        font-size: 42px;
+
+    }
+
+    .hero-card {
+
+        width: 280px;
+
+        height: 280px;
+
+    }
+
+    .nosotros-contenido,
+    .contacto-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .productos {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
